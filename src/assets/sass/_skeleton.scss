@@ -1,0 +1,43 @@
+.course_skeleton {
+    .content {
+      padding: 8px;
+    }
+    .ant-skeleton {
+        .ant-skeleton-content {
+            .ant-skeleton-paragraph {
+                li {
+                    height: 0.7rem;
+                    margin-top: 0.7rem;
+                    border-radius: unset;
+                }
+            }
+        }
+        .ant-skeleton-image {
+            height: 9.4rem;
+            width: 20.7rem;
+        }
+    }
+}
+
+.skeleton_title {
+    width: fit-content;
+    background: #b5b5b5;
+    .ant-skeleton-content {
+        .ant-skeleton-title {
+            width: 25rem;
+            height: 1rem;
+            margin-top: 0;
+            background-color: #000;
+        }
+    }
+}
+
+.banner_skeleton {
+    .ant-skeleton {
+        background: #999999;
+        .ant-skeleton-avatar {
+            height: 43.4rem;
+            width: 100vw;
+        }
+    }
+}

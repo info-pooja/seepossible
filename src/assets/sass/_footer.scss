@@ -1,0 +1,68 @@
+footer {
+  width: 100%;
+  float: left;
+  bottom: 0;
+
+  .footer {
+    width: 100%;
+    min-height: 9rem;
+    background: linear-gradient(
+      360deg,
+      #f0f0f0 0%,
+      rgba(242, 242, 242, 0.864583) 75.52%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    padding-top: 4.5rem;
+    padding-bottom: 2.7rem;
+    @media (max-width: $phone_landscape) {
+      background: #f0f0f0;
+      padding: 18px 0;
+      min-height: auto;
+    }
+    .container {
+      max-width: 110rem;
+    }
+    &_content {
+      max-width: 90rem;
+      @extend .d_flex;
+      @extend .align_items_center;
+      @extend .justify_content_around;
+      @media screen and (max-width: $phone_landscape) {
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    &_logo {
+      width: 100%;
+      width: 12rem;
+      @media (max-width: $phone_landscape) {
+        display: none;
+      }
+      img {
+        @extend .img_object_center;
+        @extend .cursor_pointer;
+      }
+    }
+    .copy_right {
+      @extend .fs_15;
+      line-height: 1.8rem;
+      color: $black;
+      margin-top: 1rem;
+      @media screen and (max-width: $phone_landscape) {
+        max-width: 31rem;
+        text-align: center;
+        margin-top: 0;
+      }
+      span {
+        @media screen and (max-width: $phone_landscape) {
+          display: none;
+        }
+      }
+      a {
+        &:hover {
+          color: $maroon;
+        }
+      }
+    }
+  }
+}

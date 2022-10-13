@@ -1,0 +1,263 @@
+.resetPass {
+  width: 100% !important;
+  max-width: 45rem;
+  @extend .px_auto;
+  .ant-modal-content {
+    @extend .radius_05;
+    .ant-modal-close {
+      @extend .d_none;
+    }
+    .ant-modal-body {
+      padding: 3rem 4rem;
+    }
+    .close_icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      @extend .d_flex_center;
+      @extend .cursor_pointer;
+      @extend .position_absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      img {
+        width: 1.05rem;
+        @extend .img_object_center;
+      }
+    }
+  }
+}
+
+.modal_pop {
+  .signpage_modal {
+    .resetpassword {
+      @extend .text_center;
+      .reset_content {
+        @extend .fs_16;
+        line-height: 1.9rem;
+        color: $dark_gray;
+        @extend .fw_600;
+        @media screen and (max-width: $iphone_ii - 1) {
+          padding: 0 1rem;
+        }
+      }
+      .form_group {
+        @media screen and (max-width: $iphone_ii - 1) {
+          margin-bottom: 3.85rem;
+        }
+        .form_control {
+          @media screen and (max-width: $iphone_ii) {
+            max-width: 27.3rem;
+          }
+        }
+      }
+      .mail_name {
+        @extend .fs_15;
+        line-height: 1.8rem;
+        color: $dark_gray;
+        @extend .text_lowercase;
+        @media screen and (max-width: $iphone_ii - 1) {
+          margin-bottom: 1.6rem;
+        }
+      }
+      .resend_email {
+        @extend .fs_15;
+        line-height: 1.8rem;
+        color: $maroon;
+        @extend .text_capitalize;
+        @extend .text_underline;
+        @extend .cursor_pointer;
+        margin-bottom: 2.6rem;
+      }
+    }
+  }
+  .exist_email {
+    h4.mb_2 {
+      margin: 0 0 5px;
+    }
+    .mail_name {
+      margin-bottom: 30px;
+    }
+    .reset_content {
+      margin-bottom: 34px;
+      @media screen and (max-width: $iphone_ii - 1) {
+        margin-bottom: 1.6rem;
+      }
+    }
+  }
+}
+
+.modal_body {
+  .errormsg {
+    @extend .fs_10;
+    line-height: 1.2rem;
+    color: $maroon;
+    letter-spacing: -0.288px;
+    @extend .mt_05;
+    font-size: 13px;
+    max-width: 261px;
+    margin: 3px auto 0;
+    text-align: left;
+  }
+}
+
+.video_popup {
+  width: 80% !important;
+  max-width: 90rem;
+  .ant-modal-content {
+    @media screen and (max-width: $phone_landscape) {
+      width: auto;
+    }
+  }
+  .ant-modal-body {
+    padding: 0;
+  }
+  .player-wrapper {
+    height: 50.6rem;
+    @media screen and (max-width: $ipad) {
+      height: 40rem;
+    }
+    @media screen and (max-width: $phone) {
+      height: 30rem;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      @extend .img_object_center;
+    }
+  }
+  .ant-modal-close-x {
+    display: none;
+  }
+  .play_video {
+    @extend .d_flex;
+    align-items: center;
+    width: 100%;
+    background: $black_shade;
+    padding: 1.8rem 2rem;
+    .pause {
+      width: 4rem;
+      flex: 0 0 4rem;
+      justify-content: start;
+      img {
+        width: 1.2rem;
+        height: 1.5rem;
+      }
+    }
+    .play_progress {
+      width: calc(100% - 5.6rem);
+      padding-right: 3rem;
+
+      @extend .d_flex;
+      align-items: center;
+      justify-content: space-between;
+      .progressbar {
+        width: calc(100% - 10rem);
+        .progressive {
+          height: 0.3rem;
+          background: $blue_light;
+        }
+        input {
+          padding: 0;
+          width: 100%;
+          height: 0.3rem;
+          overflow: hidden;
+          @extend .cursor_pointer;
+        }
+      }
+      span {
+        font-family: national_light;
+        @extend .fs_14;
+        line-height: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $light_gray_think;
+        width: 8.2rem;
+        text-align: right;
+      }
+    }
+    .volume_up_down {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 2rem;
+        height: 1.6rem;
+      }
+      .volum_btn {
+        -webkit-appearance: none;
+        width: 3.8rem;
+        height: 0.4rem;
+        background: $light_gray_ii;
+        border-radius: 10px;
+        padding: 0;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: -3rem;
+        cursor: pointer;
+      }
+      .volum_btn::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 1rem;
+        height: 1rem;
+        background: $blue_light;
+        @extend .radius_rounded;
+      }
+    }
+  }
+}
+
+.errorPop {
+  width: 100% !important;
+  max-width: 48rem;
+  padding: 0 1.5rem;
+  @media screen and (max-width: $iphone_ii - 1) {
+    padding: 0 3rem;
+  }
+  .ant-modal-content {
+    @extend .radius_05;
+    .ant-modal-close {
+      .ant-modal-close-x {
+        font-size: 0;
+      }
+    }
+    .ant-modal-body {
+      padding: 2.9rem 4rem 1.5rem;
+      @media screen and (max-width: $iphone_ii - 1) {
+        padding: 2.9rem 2rem 1.5rem;
+      }
+    }
+    .close_icon {
+      width: 1.5rem;
+      height: 1.5rem;
+      @extend .d_flex_center;
+      @extend .cursor_pointer;
+      @extend .position_absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      img {
+        width: 1.05rem;
+        @extend .img_object_center;
+      }
+    }
+    .delete_model {
+      text-align: center;
+      p.delete_group_modal {
+        margin: 10px 0 10px;
+        line-height: 1.3;
+      }
+      h6.delete_group_modal {
+        margin: 0 0 10px;
+      }
+      .text-center.mb-4 {
+        margin: 0 0 20px;
+        .btn {
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}
+.pop_email {
+  text-decoration: underline !important;
+  color: $dark_gray !important;
+}

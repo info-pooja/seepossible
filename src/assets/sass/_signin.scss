@@ -1,0 +1,214 @@
+.signin {
+  padding: 5rem 0;
+  .container {
+    form {
+      width: 100%;
+      max-width: 26.1rem;
+      @extend .mx_auto;
+      @media screen and (max-width: $iphone_ii) {
+        max-width: 31.5rem;
+      }
+      .form_control {
+        @media screen and (max-width: $iphone_ii) {
+          max-width: 100%;
+        }
+      }
+      h2 {
+        margin-bottom: 2.1rem;
+        @media (max-width: $phone) {
+          text-align: center;
+        }
+      }
+      .errormsg {
+        @extend .fs_10;
+        line-height: 1.2rem;
+        color: $maroon;
+        letter-spacing: -0.288px;
+        @extend .mt_05;
+      }
+      .password {
+        max-width: 20rem;
+        @media screen and (max-width: $iphone_ii) {
+          max-width: 100%;
+        }
+        .form_control {
+          padding-right: 2.8rem;
+        }
+        .grideye {
+          width: 2rem;
+          height: 2rem;
+          @extend .d_flex_center;
+          @extend .position_absolute;
+          right: 0.9rem;
+          top: 0.8rem;
+          @extend .cursor_pointer;
+        }
+        .digit_pass {
+          @extend .national_light;
+          font-weight: 600;
+          @extend .fs_10;
+          line-height: 1.2rem;
+          color: $black;
+          letter-spacing: -0.0288rem;
+        }
+      }
+      .privacy_policy {
+        @extend .national_light;
+        font-weight: 600;
+        @extend .fs_10;
+        line-height: 1.2rem;
+        letter-spacing: -0.0288rem;
+        a {
+          @extend .d_inline_block;
+          @extend .text_underline;
+          @extend .fw_600;
+        }
+      }
+      .registere {
+        @extend .fs_15;
+        line-height: 1.8rem;
+        color: $maroon;
+        a {
+          color: $maroon;
+          @extend .text_underline;
+        }
+      }
+      .form_group button[type="submit"] {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 35px;
+        vertical-align: top;
+        display: inline-block;
+      }
+    }
+  }
+  &.signUp {
+    padding: 3rem 0;
+    form {
+      h5 {
+        margin-bottom: 3.4rem;
+      }
+      .form_group {
+        @extend .mb_3;
+      }
+      .password {
+        .form_group {
+          @extend .mb_1;
+        }
+      }
+      .forgot {
+        @extend .fs_12;
+        line-height: 1.4rem;
+        @extend .fw_600;
+        @extend .text_underline;
+        color: $dark_gray;
+        margin-bottom: 3.6rem;
+        @extend .cursor_pointer;
+        display: inline-block;
+        vertical-align: top;
+        &:hover {
+          color: #990000;
+        }
+      }
+    }
+  }
+  &.congratulations_page {
+    padding-top: 65px;
+    @media (max-width: $phone_landscape) {
+      padding: 0 30px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+  form#register {
+    @media (max-width: $iphone_ii) {
+      max-width: 315px;
+    }
+    .form_group .form_control,
+    .password {
+      @media (max-width: $iphone_ii) {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+    .form_group {
+      &:first-child {
+        @media (max-width: $iphone_ii) {
+          margin-bottom: 18px;
+        }
+      }
+      &:nth-child(3) {
+        margin-bottom: 11px;
+        @media (max-width: $iphone_ii) {
+          margin-bottom: 18px;
+        }
+      }
+      &:nth-child(4) {
+        margin-bottom: 13px;
+        @media (max-width: $iphone_ii) {
+          margin-bottom: 18px;
+        }
+      }
+      &:nth-child(5) {
+        margin-bottom: 5px;
+        @media (max-width: $iphone_ii) {
+          margin-bottom: 13px;
+        }
+      }
+      &:nth-child(6) {
+        margin-bottom: 10px;
+      }
+      &.pt_1.pb_2 {
+        margin: 0 0 11px;
+        padding-bottom: 0;
+        @media (max-width: $iphone_ii) {
+          text-align: center;
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    p.deskView {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: -0.29px;
+      @media (max-width: $iphone_ii) {
+        text-align: center;
+      }
+      span {
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        strong {
+          @extend .national_semibold;
+          @media (max-width: $iphone_ii) {
+            text-decoration: underline;
+          }
+        }
+        &:hover {
+          color: #990000;
+        }
+      }
+    }
+  }
+}
+button.ant-modal-close {
+  top: 16px;
+  right: 16px;
+  .ant-modal-close-x {
+    width: 13px;
+    height: 13px;
+    line-height: 16px;
+  }
+}
+html .ant-form-item-explain-error {
+  color: #990000;
+  font-size: 10px;
+  line-height: 28px;
+  @media (max-width: $iphone_ii) {
+    line-height: 12px;
+    margin: 8px 0 0;
+  }
+}

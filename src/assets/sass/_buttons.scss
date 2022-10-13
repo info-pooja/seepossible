@@ -1,0 +1,82 @@
+.btn-loader{
+    .ant-spin-dot-item{
+        background-color: $yellow;
+    }
+}
+
+.btn {
+    @extend .fs_15;
+    line-height: 1.8rem;
+    @extend .text_center;
+    @extend .border_0;
+    @extend .radius_05;
+    @extend .cursor_pointer;
+    @extend .text_uppercase;
+    @extend .fw_600;
+    color: $black;
+    padding: 0.85rem 1.5rem;
+    min-width: 8.7rem;
+    background: $gray;
+    @include transition(all .3s ease-in-out);
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+}
+.btn_light {
+    @extend .fs_15;
+    line-height: 1.8rem;
+    @extend .text_center;
+    @extend .border_0;
+    @extend .radius_05;
+    @extend .cursor_pointer;
+    @extend .text_uppercase;
+    @extend .fw_600;
+    color: $black;
+    padding: 0.85rem 1.5rem;
+    min-width: 12.3rem;
+    background: $thik_gray;
+    @include transition(all .3s ease-in-out);
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+}
+.btn_primary {
+    @extend .fs_15;
+    line-height: 1.8rem;
+    @extend .text_center;
+    @extend .border_0;
+    @extend .radius_05;
+    @extend .cursor_pointer;
+    @extend .text_uppercase;
+    @extend .fw_600;
+    color: $white;
+    padding: 0.85rem 1.5rem;
+    min-width: 10.2rem;
+    background: $maroon;
+    @include transition(all .3s ease-in-out);
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+}
+.yellow_btn {
+    background: $yellow;
+    border: 0;
+    height: 30px;
+    width: 100%;
+    display: block;
+    color: $maroon;
+    @extend .national_semibold;
+    font-size: 12px;
+    line-height: 30px;
+    @extend .text_capitalize;
+    @extend .text_center;
+    border-radius: 3px;
+    @include transition(all .3s ease-in-out);
+    &:hover {
+        background: $black;
+        color: $white;
+    }
+}

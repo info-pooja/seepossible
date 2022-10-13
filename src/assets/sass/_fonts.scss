@@ -1,0 +1,16 @@
+@font-face {
+    font-family: national_regular;
+    src: url(../fonts/national-regular.otf);
+}
+@font-face {
+    font-family: national_semibold;
+    src: url(../fonts/national_semibold.otf);
+}
+@font-face {
+    font-family: national_light;
+    src: url(../fonts/national-light.ttf);
+}
+
+.national_regular{font-family: national_regular;}
+.national_semibold{font-family: national_semibold;}
+.national_light{font-family: national_light;}
